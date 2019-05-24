@@ -1,0 +1,73 @@
+body {
+    background-color: #FAF7F7;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/*-----------------LOG-IND------------------*/
+
+/*-----header----*/
+header {
+    background-color: #EA5045;
+    height: 48vw;
+}
+
+#top_logind {
+    background-image: url(assets/logo_white.svg);
+    height: 6.4vw;
+    width: 25.4vw;
+    position: absolute;
+    background-size: 100%;
+}
+
+.pos {
+    top: 20vw;
+    left: 38vw;
+}
+
+/*-----bottom----*/
+#logind {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.boks {
+    border-radius: 5vw;
+    height: 10vw;
+    width: 55vw;
+    margin: 5vw;
+}
+
+.email,
+.adgangskode {
+    background-color: #FFFFFF;
+}
+
+.knap {
+    background-color: #EA5045;
+    border: 0.4vw solid #EA5045;
+}
+
+.facebook {
+    background-color: #FAF7F7;
+    border: 0.4vw solid #EA5045;
+}
