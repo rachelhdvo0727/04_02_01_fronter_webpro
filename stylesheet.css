@@ -17,12 +17,16 @@ a:link {
     text-decoration: none;
 }
 
+h1 {
+    font-family: 'WebFont', Arial, sans-serif;
+}
+
 /*-----------------LOG-IND------------------*/
 
 /*-----header----*/
 header {
     background-color: #EA5045;
-    height: 48vw;
+    height: 45vw;
 }
 
 #top_logind {
@@ -34,7 +38,7 @@ header {
 }
 
 .pos {
-    top: 20vw;
+    top: 18vw;
     left: 38vw;
 }
 
@@ -42,15 +46,16 @@ header {
 #logind {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    flex-direction: column;
 }
 
-.boks {
+.col {
     border-radius: 5vw;
     height: 10vw;
     width: 55vw;
@@ -70,4 +75,41 @@ header {
 .facebook {
     background-color: #FAF7F7;
     border: 0.4vw solid #EA5045;
+}
+
+/*-----------------FONTS------------------*/
+@font-face {
+    font-family: 'arialbold_italic';
+    src: url('webfontkit-arial/arial_bold_italic-webfont.woff2') format('woff2'),
+        url('webfontkit-arial/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'arialbold';
+    src: url('webfontkit-arial/arial_bold-webfont.woff2') format('woff2'),
+        url('webfontkit-arial/arial_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'arialitalic';
+    src: url('webfontkit-arial/arial_italic-webfont.woff2') format('woff2'),
+        url('webfontkit-arial/arial_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'arialregular';
+    src: url('webfontkit-arial/arial-webfont.woff2') format('woff2'),
+        url('webfontkit-arial/arial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
