@@ -28,6 +28,7 @@ a:link {
 header {
     background-color: #EA5045;
     height: 45vw;
+    width: 100%;
 }
 
 #top_logind {
@@ -83,7 +84,7 @@ input[type=password] {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    margin: 3vw;
+    margin-bottom: 25vw;
 }
 
 button {

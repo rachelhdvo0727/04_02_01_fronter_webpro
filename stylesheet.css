@@ -1,5 +1,7 @@
 :root {
     font-size: 3vw;
+    --screen-width: 500px;
+    --screen-height: 812px;
 }
 
 html,
@@ -25,43 +27,52 @@ a:link {
 header {
     background-color: #EA5045;
     height: 10vw;
+    width: 100%;
+    position: fixed;
 }
 
 /*-----------------MENU------------------*/
+#menu {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    width: 100%;
+    height: var(--screen-height);
+    background-color: #3F3140;
+}
+
+.logo {
+    background-image: url(assets/logo_white.svg);
+    height: 6.4vw;
+    width: 25.4vw;
+    background-size: 100%;
+    margin-top: 15vw;
+    margin-bottom: 6vw;
+}
+
+.item {
+    text-align: center;
+    margin: 2vw;
+    padding: 1.5vw;
+}
+
 nav .hidden {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 nav a {
     font-family: canada-type-gibson, sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
-    font-size: 3.5vw;
-    margin: 5vw;
+    font-size: 4vw;
+    margin: 4vw;
     color: #F58E81;
-}
-
-#menu {
-    display: flex;
-    flex-flow: wrap column;
-    width: 100%;
-    background-color: #3F3140;
-}
-
-.item {
-    flex-grow: 1;
-    text-align: center;
-    margin: 1.5vw;
-    padding: 2vw;
-}
-
-nav li:hover {
-    transform: scale(1.2);
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -76,8 +87,9 @@ header nav a:visited {
 }
 
 /* mouse over link */
-header nav a:hover {
-    color: #FFFFFF;
+header nav a:hover,
+nav button a:hover {
+    color: #EA5045;
 }
 
 /* selected link */
@@ -108,12 +120,14 @@ header nav a:active {
 
 .hidden {
     transform: translateX(100%);
+    transition: .10s;
     opacity: 0;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-48deg) translate(-6px, 6px);
+    transition: .20s;
 }
 
 /* Fade out the second bar */
@@ -123,18 +137,50 @@ header nav a:active {
 
 /* Rotate last bar */
 .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(48deg) translate(-7px, -8px);
+    transition: .20s;
 }
 
+
+/*----------LOG UD----------*/
 button {
-    height: 4vw;
-    width: auto;
+    height: 8vw;
+    width: var(--screen-width);
+    margin-top: 56vw;
+    border: none;
     background-color: #F58E81;
+    cursor: pointer;
+}
+
+nav button a {
+    font-family: 'arialbold';
+    color: #FFFFFF;
+}
+
+/*visited*/
+nav button a:visited {
+    color: #FFFFFF;
+}
+
+/* unvisited link */
+nav button a:link {
+    color: #FFFFFF;
 }
 
 /*-----------------FORSIDE------------------*/
+/*-----------HEADER-----------*/
+.kea,
+.profil {
+    position: absolute;
+}
 
-
+.kea_sprite {
+    background-image: url(assets/logo_white.svg);
+    background-size: 100%;
+    height: 3.7vw;
+    width: 15vw;
+    margin: 2.5vw;
+}
 
 /*-----------------FONTS------------------*/
 @font-face {

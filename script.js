@@ -10,8 +10,6 @@ function sidenVises() {
 function toggleMenu() {
     console.log("toggleMenu");
     document.querySelector("#menu").classList.toggle("hidden");
-    document.querySelector(".social_media").classList.add("hidden");
-
     let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 
 
