@@ -12,23 +12,45 @@
 
 <body>
     <header>
-        <div id="top_logind" class="pos">
+        <div id="top_logind" class="pos_logo">
         </div>
     </header>
+
     <section id="logind">
-        <div class="sectionwrapper">
-            <div class="col email"></div>
-            <div class="col adgangskode"></div>
-        </div>
-        <div class="sectionwrapper">
-            <div class="col knap">
-                <h1>CONTINUE</h1>
+
+        <form action="/action_page.php">
+
+            <div class="sectionwrapper">
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
             </div>
-            <div class="col facebook">
-                <h1>LOGIN WITH FACEBOOK</h1>
+
+            <div class="sectionwrapper">
+
+                <div class="divider">
+                </div>
+
+                <button type="continue">
+                    <h1>Continue</h1>
+                </button>
+
+                <div class="col_facebook">
+                    <div class="logo"></div>
+                    <a href="https://www.facebook.com/">login with facebook</a>
+                </div>
+
+                <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
-        </div>
+
+        </form>
+
     </section>
 </body></html>
+
 <link rel="stylesheet" href="stylesheet.css">
 <script src="script.js"></script>

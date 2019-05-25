@@ -1,3 +1,8 @@
+:root {
+    font-size: 3vw;
+}
+
+html,
 body {
     background-color: #FAF7F7;
     margin: 0 auto;
@@ -17,9 +22,6 @@ a:link {
     text-decoration: none;
 }
 
-h1 {
-    font-family: 'WebFont', Arial, sans-serif;
-}
 
 /*-----------------LOG-IND------------------*/
 
@@ -37,44 +39,134 @@ header {
     background-size: 100%;
 }
 
-.pos {
+.pos_logo {
     top: 18vw;
     left: 38vw;
 }
 
+
 /*-----bottom----*/
+form {
+    margin: 10vw 10vw 2vw 10vw;
+}
+
+input[type=text],
+input[type=password] {
+    /*child*/
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: 'WebFont', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #EA5045;
+    width: 100%;
+    padding: 2vw 5vw;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5vw;
+    border: none;
+    box-sizing: border-box;
+}
+
+.placeholder {
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #EA5045;
+}
+
 #logind {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-around;
 }
 
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
+    margin: 3vw;
 }
 
-.col {
+button {
+    /*child*/
+    flex-grow: 1;
+    flex-basis: auto;
+    border: none;
     border-radius: 5vw;
-    height: 10vw;
-    width: 55vw;
-    margin: 5vw;
-}
-
-.email,
-.adgangskode {
-    background-color: #FFFFFF;
-}
-
-.knap {
     background-color: #EA5045;
-    border: 0.4vw solid #EA5045;
+    height: 9vw;
+    width: 55vw;
+    margin: 2.3vw;
+    cursor: pointer;
 }
 
-.facebook {
+button h1 {
+    font-family: 'arialbold';
+    font-size: 2.4vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.divider {
+    /*child*/
+    flex-grow: 1;
+    flex-basis: auto;
+    align-self: center;
+    background-color: #DEDCDB;
+    border-radius: 4vw;
+    height: 0.8vw;
+    width: 4.6vw;
+    background-size: 100%;
+}
+
+
+label,
+span {
+    /*child*/
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #EA5045;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1.2rem;
+}
+
+span a {
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #EA5045;
+}
+
+.col_facebook {
     background-color: #FAF7F7;
     border: 0.4vw solid #EA5045;
+    border-radius: 5vw;
+    height: 9vw;
+    width: 55vw;
+    margin: 2.3vw;
+    /*child*/
+    flex-grow: 1;
+    flex-basis: 7.5vw;
+    /*parent*/
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.col_facebook a {
+    font-family: 'arialbold';
+    color: #EA5045;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logo {
+    background-image: url(assets/facebook_logo.svg);
+    background-size: 100%;
+    width: 3.3vw;
+    height: 3vw;
 }
 
 /*-----------------FONTS------------------*/
