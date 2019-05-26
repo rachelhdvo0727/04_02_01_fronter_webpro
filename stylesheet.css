@@ -1,7 +1,7 @@
 :root {
-    font-size: 3vw;
     --screen-width: 500px;
     --screen-height: 812px;
+    font-size: 100%;
 }
 
 html,
@@ -9,6 +9,7 @@ body {
     background-color: #FAF7F7;
     margin: 0 auto;
     height: 100%;
+
 }
 
 img {
@@ -28,7 +29,7 @@ header {
     background-color: #EA5045;
     height: 10vw;
     width: 100%;
-    position: fixed;
+    top: 0;
 }
 
 /*-----------------MENU------------------*/
@@ -39,6 +40,7 @@ header {
     width: 100%;
     height: var(--screen-height);
     background-color: #3F3140;
+    z-index: 1;
 }
 
 .logo {
@@ -101,6 +103,7 @@ header nav a:active {
     position: absolute;
     display: inline-block;
     cursor: pointer;
+    z-index: 2;
 }
 
 .pos {
@@ -196,6 +199,7 @@ nav button a:link {
     width: 4vw;
 }
 
+/*--------FORSIDES INDHOLD------------*/
 
 #forside {
     display: flex;
@@ -204,9 +208,9 @@ nav button a:link {
 
 #forside .sectionwrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
     justify-content: space-around;
-    margin: 15vw 2vw 0vw 2vw;
+    margin: 2vw;
 }
 
 .col {
@@ -238,9 +242,9 @@ nav button a:link {
 .materialer .ikon {
     background-image: url(assets/Folder.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 4vw;
 }
 
 .materialer .tekst {
@@ -253,9 +257,9 @@ nav button a:link {
 .skema .ikon {
     background-image: url(assets/Calendar.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 4vw;
 }
 
 .skema .tekst {
@@ -268,9 +272,9 @@ nav button a:link {
 .noti .ikon {
     background-image: url(assets/Alert.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 4vw;
 }
 
 .noti .tekst {
@@ -286,7 +290,6 @@ nav button a:link {
     flex-basis: 35vw;
     /*parent*/
     display: flex;
-    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -302,9 +305,9 @@ nav button a:link {
 .mail .ikon {
     background-image: url(assets/Messages.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 4vw;
 }
 
 .mail .tekst {
@@ -317,9 +320,9 @@ nav button a:link {
 .favoritter .ikon {
     background-image: url(assets/Bookmark.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 4vw;
 }
 
 .favoritter .tekst {
@@ -332,9 +335,9 @@ nav button a:link {
 .grupper .ikon {
     background-image: url(assets/grupper.svg);
     background-size: 100%;
-    height: 5.4vw;
-    width: 8vw;
-    margin: 2vw;
+    height: 9.4vw;
+    width: 14vw;
+    margin: 4vw;
 }
 
 .grupper .tekst {
@@ -347,9 +350,8 @@ nav button a:link {
 .chat .ikon {
     background-image: url(assets/chat.svg);
     background-size: 100%;
-    height: 5.5vw;
-    width: 8vw;
-    margin: 2vw;
+    height: 11.6vw;
+    width: 17vw;
 }
 
 .chat .tekst {
@@ -360,7 +362,6 @@ nav button a:link {
 }
 
 .container {
-    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
 }
@@ -368,10 +369,9 @@ nav button a:link {
 .aktuelt {
     /*child*/
     flex-grow: 2;
-    flex-basis: 20vw;
+    flex-basis: 50vw;
     /*parent*/
     display: flex;
-    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -386,33 +386,16 @@ nav button a:link {
 }
 
 .col_narrow {
-    /*child*/
-    flex-grow: 1;
-    flex-basis: 10vw;
-    /*parent*/
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-}
-
-    {
-    padding: 7vw;
-    /*child*/
-    flex-grow: 1;
-    flex-basis: 10vw;
-    /*parent*/
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .search .ikon {
     background-image: url(assets/search.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 10vw;
+    width: 10vw;
+    margin: 4vw;
 }
 
 .search .tekst {
@@ -425,9 +408,9 @@ nav button a:link {
 .afleveringer .ikon {
     background-image: url(assets/afleveringer.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 10vw;
+    width: 10vw;
+    margin: 4vw;
 }
 
 .afleveringer .tekst {
@@ -488,3 +471,5 @@ nav button a:link {
     font-style: normal;
 
 }
+
+/*-----------------Store skærme-----------------*/
