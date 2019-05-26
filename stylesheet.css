@@ -149,7 +149,7 @@ header nav a:active {
 button {
     height: 8vw;
     width: var(--screen-width);
-    margin-top: 56vw;
+    margin-top: 56.2vw;
     border: none;
     background-color: #F58E81;
     cursor: pointer;
