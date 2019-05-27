@@ -67,6 +67,12 @@ input[type=password] {
     box-sizing: border-box;
 }
 
+input[type=text]:hover,
+input[type=password]:hover,
+button:hover {
+    box-shadow: 1vw 1vw 1vw #DEDCDB;
+}
+
 .placeholder {
     font-family: 'WebFont', Arial, sans-serif;
     color: #EA5045;
@@ -107,6 +113,7 @@ button a {
     color: #FFFFFF;
 }
 
+
 .divider {
     /*child*/
     flex-grow: 1;
@@ -145,6 +152,7 @@ span a {
     height: 9vw;
     width: 55vw;
     margin: 2.3vw;
+
     /*child*/
     flex-grow: 1;
     flex-basis: 7.5vw;
@@ -153,6 +161,10 @@ span a {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+}
+
+.col_facebook:hover {
+    box-shadow: 1vw 1vw 1vw #DEDCDB;
 }
 
 .col_facebook a {
