@@ -511,6 +511,7 @@ table {
     width: 100%;
     background-color: #FFFFFF;
     border-collapse: collapse;
+    line-height: 1.6;
 }
 
 tr:nth-child(3n+0) {
@@ -525,17 +526,22 @@ tr {
     color: #BCC5D3;
     box-sizing: border-box;
     border: 0.2vw solid var(--table-border);
-    padding: 2vw 0 2vw 3vw;
+    padding: 1vw 0 1vw 3vw;
 }
 
 /*-----------BOTTOM------------*/
 .footer {
     background-color: #3F3140;
     position: fixed;
+    box-sizing: border-box;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    padding: 3.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .footer a {
@@ -547,12 +553,10 @@ tr {
 }
 
 .skema_logo {
-    flex-grow: 1;
-    flex-basis: 10vw;
     background-image: url(assets/calendar-icon.svg);
-    height: 5vw;
-    width: 5vw;
-    position: absolute;
+    height: 3.8vw;
+    width: 3.4vw;
+    margin-right: 3vw;
 }
 
 /*-----------------FONTS------------------*/
