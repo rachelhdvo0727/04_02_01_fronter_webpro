@@ -6,8 +6,6 @@ function sidenVises() {
     //burgermenu
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-    //ikoner på header
-    //document.querySelector("#header_container").classList.remove("hidden");
 }
 
 function toggleMenu() {

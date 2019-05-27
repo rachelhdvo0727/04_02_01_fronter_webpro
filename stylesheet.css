@@ -13,7 +13,8 @@ body {
     overflow-x: hidden;
 }
 
-img {
+img,
+table {
     width: 100%;
 }
 
@@ -173,17 +174,26 @@ nav button a:link {
 
 /*-----------------FORSIDE------------------*/
 /*-----------HEADER-----------*/
+/*#ikon_wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2vw;
+}*/
+
 .kea {
     position: absolute;
     top: 3vw;
     left: 5vw;
+    /*margin-right: 3vw;*/
     cursor: pointer;
+    /*padding: 1vw;*/
 }
 
 .profil {
     position: absolute;
     top: 2.3vw;
     right: 12vw;
+
 }
 
 .kea_sprite {
@@ -457,7 +467,7 @@ nav button a:link {
 .label {
     background-color: #DEDCDB;
     box-sizing: border-box;
-    padding: 2.5vw;
+    padding: 1.5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -468,14 +478,27 @@ nav button a:link {
     font-weight: 600;
     font-style: normal;
     color: #3F3140;
+    box-sizing: border-box;
+}
+
+.label h3 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 350;
+    font-size: 3vw;
+    padding: 1vw 0;
+    font-style: normal;
+    color: #707070;
+    box-sizing: border-box;
 }
 
 .label h2 {
     font-family: canada-type-gibson, sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 3.5vw;
     font-style: normal;
-    color: #3F3140;
+    color: #707070;
+    box-sizing: border-box;
+    padding: 1vw;
 }
 
 .left,
@@ -486,6 +509,54 @@ nav button a:link {
 
 .right {
     text-align: right;
+}
+
+.dato {
+    background-color: #3F3140;
+    box-sizing: border-box;
+    padding: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dato a {
+    color: #F58E81;
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-size: 4.5vw;
+    font-style: normal;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2vw 2vw;
+}
+
+.month,
+.dag,
+.number {
+    padding: 0.6vw;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: canada-type-gibson, sans-serif;
+}
+
+.month {
+    font-weight: 600;
+    font-size: 3.5vw;
+    font-style: normal;
+}
+
+.dag {
+    font-weight: 400;
+    font-size: 2.8vw;
+    font-style: normal;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 3.5vw;
+    font-style: normal;
 }
 
 /*-----------------FONTS------------------*/
