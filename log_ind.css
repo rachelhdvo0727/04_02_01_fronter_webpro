@@ -68,8 +68,13 @@ input[type=password] {
 }
 
 input[type=text]:hover,
-input[type=password]:hover,
-button:hover {
+input[type=password]:hover {
+    box-shadow: 1vw 1vw 1vw #DEDCDB;
+}
+
+button:hover,
+.col_facebook:hover {
+    background-color: #F58E81;
     box-shadow: 1vw 1vw 1vw #DEDCDB;
 }
 
@@ -152,7 +157,6 @@ span a {
     height: 9vw;
     width: 55vw;
     margin: 2.3vw;
-
     /*child*/
     flex-grow: 1;
     flex-basis: 7.5vw;
@@ -161,10 +165,6 @@ span a {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-}
-
-.col_facebook:hover {
-    box-shadow: 1vw 1vw 1vw #DEDCDB;
 }
 
 .col_facebook a {
