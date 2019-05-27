@@ -3,6 +3,7 @@
     --screen-height: 812px;
     --main-bg-color: #FAF7F7;
     --main-knap-color: #EA5045;
+    --table-border: #E2E8ED;
     font-size: 100%;
 }
 
@@ -31,7 +32,6 @@ header {
     background-color: #EA5045;
     height: 10vw;
     width: 100%;
-    top: 0;
 }
 
 /*-----------------MENU------------------*/
@@ -178,15 +178,14 @@ nav button a:link {
     flex-wrap: wrap;
     display: flex;
     padding: 2vw;
-}*/
-
+}
+*/
 .kea {
     position: absolute;
-    top: 3vw;
+    top: 2vw;
     left: 5vw;
-    /*margin-right: 3vw;*/
     cursor: pointer;
-    /*padding: 1vw;*/
+    padding: 1vw;
 }
 
 .profil {
@@ -230,6 +229,16 @@ nav button a:link {
     padding: 5vw;
 }
 
+.col a {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #F58E81;
+    /*child*/
+    flex-grow: 1;
+    flex-basis: 10vw;
+}
+
 .materialer,
 .skema,
 .noti,
@@ -258,13 +267,6 @@ nav button a:link {
     margin: 4vw;
 }
 
-.materialer .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
-}
-
 .skema .ikon {
     background-image: url(assets/Calendar.svg);
     background-size: 100%;
@@ -273,26 +275,12 @@ nav button a:link {
     margin: 4vw;
 }
 
-.skema .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
-}
-
 .noti .ikon {
     background-image: url(assets/Alert.svg);
     background-size: 100%;
     height: 8vw;
     width: 8vw;
     margin: 4vw;
-}
-
-.noti .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
 }
 
 .techlounge {
@@ -322,26 +310,12 @@ nav button a:link {
     margin: 4vw;
 }
 
-.mail .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
-}
-
 .favoritter .ikon {
     background-image: url(assets/Bookmark.svg);
     background-size: 100%;
     height: 8vw;
     width: 8vw;
     margin: 4vw;
-}
-
-.favoritter .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
 }
 
 .grupper .ikon {
@@ -352,25 +326,11 @@ nav button a:link {
     margin: 4vw;
 }
 
-.grupper .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
-}
-
 .chat .ikon {
     background-image: url(assets/chat.svg);
     background-size: 100%;
     height: 11.6vw;
     width: 17vw;
-}
-
-.chat .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
 }
 
 .container {
@@ -420,13 +380,6 @@ nav button a:link {
     margin: 4vw;
 }
 
-.search .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
-}
-
 .afleveringer .ikon {
     background-image: url(assets/afleveringer.svg);
     background-size: 100%;
@@ -435,26 +388,12 @@ nav button a:link {
     margin: 4vw;
 }
 
-.afleveringer .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
-}
-
 .eksempel .ikon {
     background-image: url(assets/eksempel.svg);
     background-size: 100%;
     height: 6vw;
     width: 6vw;
     margin: 2vw;
-}
-
-.eksempel .tekst {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #F58E81;
 }
 
 
@@ -467,7 +406,6 @@ nav button a:link {
 .label {
     background-color: #DEDCDB;
     box-sizing: border-box;
-    padding: 1.5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -481,7 +419,27 @@ nav button a:link {
     box-sizing: border-box;
 }
 
+.label h2 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-size: 3.5vw;
+    font-style: normal;
+    color: #3F3140;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+
 .label h3 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 350;
+    font-size: 3.5vw;
+    padding: 1vw 0;
+    font-style: normal;
+    color: #3F3140;
+    box-sizing: border-box;
+}
+
+.label h4 {
     font-family: canada-type-gibson, sans-serif;
     font-weight: 350;
     font-size: 3vw;
@@ -491,20 +449,11 @@ nav button a:link {
     box-sizing: border-box;
 }
 
-.label h2 {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 600;
-    font-size: 3.5vw;
-    font-style: normal;
-    color: #707070;
-    box-sizing: border-box;
-    padding: 1vw;
-}
-
 .left,
 .right {
     flex-basis: 20vw;
     flex-grow: auto;
+    padding: 0 3.5vw;
 }
 
 .right {
@@ -539,24 +488,71 @@ nav button a:link {
     color: #FFFFFF;
     text-align: center;
     font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
 }
 
 .month {
     font-weight: 600;
     font-size: 3.5vw;
-    font-style: normal;
 }
 
 .dag {
     font-weight: 400;
     font-size: 2.8vw;
-    font-style: normal;
 }
 
 .number {
     font-weight: 400;
     font-size: 3.5vw;
+}
+
+/*-----------TABEL------------*/
+table {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+tr:nth-child(3n+0) {
+    background-color: var(--main-bg-color);
+}
+
+td,
+tr {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 400;
     font-style: normal;
+    color: #BCC5D3;
+    box-sizing: border-box;
+    border: 0.2vw solid var(--table-border);
+    padding: 2vw 0 2vw 3vw;
+}
+
+/*-----------BOTTOM------------*/
+.footer {
+    background-color: #3F3140;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer a {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.skema_logo {
+    flex-grow: 1;
+    flex-basis: 10vw;
+    background-image: url(assets/calendar-icon.svg);
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
 }
 
 /*-----------------FONTS------------------*/
