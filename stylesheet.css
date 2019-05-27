@@ -492,7 +492,7 @@ nav button a:link {
 }
 
 .month {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 3.5vw;
 }
 
@@ -511,22 +511,110 @@ table {
     width: 100%;
     background-color: #FFFFFF;
     border-collapse: collapse;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: canada-type-gibson, sans-serif;
+    border: 0.2vw solid var(--table-border);
+}
+
+th {
+    font-weight: 400;
+    color: #BCC5D3;
     line-height: 1.6;
+    border: 0.2vw solid var(--table-border);
+    width: 16vw;
+    padding: 1vw 0;
+}
+
+td {
+    box-sizing: border-box;
+    border: 0.2vw solid var(--table-border);
+    height: 5vw;
+    text-align: left;
+
 }
 
 tr:nth-child(3n+0) {
     background-color: var(--main-bg-color);
 }
 
-td,
-tr {
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 400;
+td:nth-last-of-type(2) {
+    background-color: #F2F1F0;
+}
+
+
+td h5 {
+    color: #000000;
+    font-weight: 510;
     font-style: normal;
-    color: #BCC5D3;
-    box-sizing: border-box;
-    border: 0.2vw solid var(--table-border);
-    padding: 1vw 0 1vw 3vw;
+    font-size: 3.2vw;
+    line-height: 0.1;
+    padding-left: 3vw;
+}
+
+td p {
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 0.1;
+    padding-left: 3vw;
+}
+
+.ikon_link1 {
+    top: 56vw;
+    left: 13vw;
+    position: absolute;
+}
+
+.sprite1 {
+    background-image: url(assets/Folder.svg);
+    width: 5vw;
+    height: 5.4vw;
+    background-size: 100%;
+    margin: 0 0 0 75vw;
+}
+
+.ikon_link2 {
+    top: 62vw;
+    left: 13vw;
+    position: absolute;
+}
+
+.sprite2 {
+    background-image: url(assets/Attachment.svg);
+    width: 4vw;
+    height: 4vw;
+    background-size: 100%;
+    margin: 0 0 0 75vw;
+}
+
+.ikon_link3 {
+    top: 86vw;
+    left: 13vw;
+    position: absolute;
+}
+
+.sprite3 {
+    background-image: url(assets/Attachment.svg);
+    width: 4vw;
+    height: 4vw;
+    background-size: 100%;
+    margin: 0 0 0 75vw;
+}
+
+.ikon_link4 {
+    top: 116vw;
+    left: 13vw;
+    position: absolute;
+}
+
+.sprite4 {
+    background-image: url(assets/Folder.svg);
+    width: 5vw;
+    height: 5.4vw;
+    background-size: 100%;
+    margin: 0 0 0 75vw;
 }
 
 /*-----------BOTTOM------------*/
@@ -557,6 +645,7 @@ tr {
     height: 3.8vw;
     width: 3.4vw;
     margin-right: 3vw;
+    ackground-size: 100%;
 }
 
 /*-----------------FONTS------------------*/
