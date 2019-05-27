@@ -1,15 +1,16 @@
 :root {
     --screen-width: 500px;
     --screen-height: 812px;
+    --main-bg-color: #FAF7F7;
+    --main-knap-color: #EA5045;
     font-size: 100%;
 }
 
 html,
 body {
-    background-color: #FAF7F7;
+    background-color: var(--main-background);
     margin: 0 auto;
-    height: 100%;
-
+    overflow-x: hidden;
 }
 
 img {
@@ -85,13 +86,13 @@ header nav a:link {
 
 /*visited*/
 header nav a:visited {
-    color: #EA5045;
+    color: var(--main-knap-color);
 }
 
 /* mouse over link */
 header nav a:hover,
 nav button a:hover {
-    color: #EA5045;
+    color: var(--main-knap-color);
 }
 
 /* selected link */
@@ -204,12 +205,12 @@ nav button a:link {
 #forside {
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--main-bg-color);
 }
 
 #forside .sectionwrapper {
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 2vw;
 }
 
@@ -234,7 +235,7 @@ nav button a:link {
     flex-basis: 10vw;
     /*parent*/
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -287,9 +288,10 @@ nav button a:link {
 .techlounge {
     /*child*/
     flex-grow: 2;
-    flex-basis: 35vw;
+    flex-basis: 40vw;
     /*parent*/
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -364,14 +366,18 @@ nav button a:link {
 .container {
     display: flex;
     flex-wrap: wrap;
+    /*child*/
+    flex-grow: 1;
+    flex-basis: 10vw;
 }
 
 .aktuelt {
     /*child*/
     flex-grow: 2;
-    flex-basis: 50vw;
+    flex-basis: 20vw;
     /*parent*/
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -386,8 +392,14 @@ nav button a:link {
 }
 
 .col_narrow {
+    /*child*/
+    flex-grow: 1;
+    flex-basis: 10vw;
+    /*parent*/
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .search .ikon {
@@ -433,6 +445,47 @@ nav button a:link {
     font-weight: 500;
     font-style: normal;
     color: #F58E81;
+}
+
+
+/*-----------------SKEMA------------------*/
+/*---TOP---*/
+#skema {
+    background-color: var(--main-bg-color);
+}
+
+.label {
+    background-color: #DEDCDB;
+    box-sizing: border-box;
+    padding: 2.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label h1 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #3F3140;
+}
+
+.label h2 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 200;
+    font-size: 3.5vw;
+    font-style: normal;
+    color: #3F3140;
+}
+
+.left,
+.right {
+    flex-basis: 20vw;
+    flex-grow: auto;
+}
+
+.right {
+    text-align: right;
 }
 
 /*-----------------FONTS------------------*/
