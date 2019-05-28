@@ -409,11 +409,14 @@ nav button a:link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    line-height: 0.7;
+
 }
 
 .label h1 {
     font-family: canada-type-gibson, sans-serif;
     font-weight: 600;
+    font-size: 4.5vw;
     font-style: normal;
     color: #3F3140;
     box-sizing: border-box;
@@ -422,9 +425,9 @@ nav button a:link {
 .label h2 {
     font-family: canada-type-gibson, sans-serif;
     font-weight: 600;
-    font-size: 3.5vw;
+    font-size: 3.4vw;
     font-style: normal;
-    color: #3F3140;
+    color: #707070;
     box-sizing: border-box;
     padding: 1vw;
 }
@@ -432,7 +435,7 @@ nav button a:link {
 .label h3 {
     font-family: canada-type-gibson, sans-serif;
     font-weight: 350;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     padding: 1vw 0;
     font-style: normal;
     color: #3F3140;
@@ -442,7 +445,7 @@ nav button a:link {
 .label h4 {
     font-family: canada-type-gibson, sans-serif;
     font-weight: 350;
-    font-size: 3vw;
+    font-size: 3.3vw;
     padding: 1vw 0;
     font-style: normal;
     color: #707070;
@@ -556,7 +559,7 @@ td p {
     color: #000000;
     font-style: normal;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 2.8vw;
     line-height: 0.1;
     padding-left: 3vw;
 }
@@ -565,11 +568,12 @@ td p {
     top: 56vw;
     left: 13vw;
     position: absolute;
+    cursor: pointer;
 }
 
 .sprite1 {
     background-image: url(assets/Folder.svg);
-    width: 5vw;
+    width: 4.8vw;
     height: 5.4vw;
     background-size: 100%;
     margin: 0 0 0 75vw;
@@ -604,14 +608,14 @@ td p {
 }
 
 .ikon_link4 {
-    top: 116vw;
+    top: 110vw;
     left: 13vw;
     position: absolute;
 }
 
 .sprite4 {
     background-image: url(assets/Folder.svg);
-    width: 5vw;
+    width: 4.8vw;
     height: 5.4vw;
     background-size: 100%;
     margin: 0 0 0 75vw;
@@ -645,7 +649,7 @@ td p {
     height: 3.8vw;
     width: 3.4vw;
     margin-right: 3vw;
-    ackground-size: 100%;
+    background-size: 100%;
 }
 
 /*-----------------FONTS------------------*/
