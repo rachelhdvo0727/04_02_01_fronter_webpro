@@ -172,20 +172,27 @@ header {
     background-color: #EA5045;
     height: 13vw;
     width: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .kea {
     position: absolute;
-    top: 3.5vw;
-    left: 5vw;
+    /*top: 3.5vw;
+    left: 5vw;*/
+    margin: 3.5vw 2vw;
     cursor: pointer;
     padding: 1vw;
 }
 
 .profil {
     position: absolute;
-    top: 3.5vw;
-    right: 15vw;
+    /*top: 3.5vw;
+    right: 15vw;*/
+    margin: 3.2vw 3vw 3.2vw 58vw;
+    cursor: pointer;
+    padding: 1vw;
 }
 
 .kea_sprite {
