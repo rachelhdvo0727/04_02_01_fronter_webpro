@@ -149,20 +149,21 @@ button {
     border: none;
     background-color: #F58E81;
     cursor: pointer;
+    font-size: 4vw;
 }
 
-nav button a {
+nav button {
     font-family: 'arialbold';
     color: #FFFFFF;
 }
 
 /*visited*/
-nav button a:visited {
+nav button:visited {
     color: #FFFFFF;
 }
 
 /* unvisited link */
-nav button a:link {
+nav button:link {
     color: #FFFFFF;
 }
 
