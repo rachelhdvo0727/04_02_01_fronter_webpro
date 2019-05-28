@@ -504,7 +504,7 @@ nav button a:link {
 }
 
 /*-----------TABEL------------*/
-table {
+table#t01 {
     width: 100%;
     background-color: #FFFFFF;
     border-collapse: collapse;
@@ -531,31 +531,33 @@ td {
 
 }
 
-tr:nth-child(3n+0) {
+table#t01 tr:nth-child(3n+0) {
     background-color: var(--main-bg-color);
 }
 
-td:nth-last-of-type(2) {
+table#t01 td:nth-last-of-type(2) {
     background-color: #F2F1F0;
 }
 
 
-td h5 {
+h5 {
     color: #000000;
     font-weight: 510;
     font-style: normal;
     font-size: 3.2vw;
     line-height: 0.1;
     padding-left: 3vw;
+    font-family: canada-type-gibson, sans-serif;
 }
 
-td p {
+p {
     color: #000000;
     font-style: normal;
     font-weight: 400;
     font-size: 2.8vw;
     line-height: 0.1;
     padding-left: 3vw;
+    font-family: canada-type-gibson, sans-serif;
 }
 
 .ikon_link1 {
@@ -615,7 +617,7 @@ td p {
     margin: 0 0 0 75vw;
 }
 
-/*-----------BOTTOM------------*/
+/*---BOTTOM---*/
 .footer {
     background-color: #3F3140;
     position: fixed;
@@ -644,6 +646,58 @@ td p {
     width: 3.4vw;
     margin-right: 3vw;
     background-size: 100%;
+}
+
+/*-----------------MATERIALER------------------*/
+#materialer {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.mat_1,
+.mat_2,
+.mat_3 {
+    box-sizing: border-box;
+    background-color: #F2F1F0;
+    flex-grow: 1;
+    flex-basis: 10vw;
+    padding: 3vw;
+}
+
+.mat_1 {
+    margin: 3.5vw 3vw 2vw 3vw;
+}
+
+.mat_2 {
+    margin: 2vw 3vw;
+}
+
+.mat_3 {
+    margin: 2vw 3vw;
+}
+
+.ikonlink_sprite1 {
+    background-image: url(assets/afleveringer.svg);
+    width: 4.8vw;
+    height: 4.8vw;
+    background-size: 100%;
+    margin: 0 0 0 80vw;
+}
+
+.ikonlink_sprite2 {
+    background-image: url(assets/afleveringer.svg);
+    width: 4.8vw;
+    height: 4.8vw;
+    background-size: 100%;
+    margin: 0 0 0 80vw;
+}
+
+.ikonlink_sprite3 {
+    background-image: url(assets/afleveringer.svg);
+    width: 4.8vw;
+    height: 4.8vw;
+    background-size: 100%;
+    margin: 0 0 0 80vw;
 }
 
 /*-----------------FONTS------------------*/
