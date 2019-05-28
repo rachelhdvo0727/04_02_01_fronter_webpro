@@ -416,7 +416,7 @@ a h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     line-height: 0.7;
-
+    padding: 0 3vw;
 }
 
 .label h1 {
@@ -440,7 +440,7 @@ a h2 {
 
 .label h3 {
     font-family: canada-type-gibson, sans-serif;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 3.3vw;
     padding: 1vw 0;
     font-style: normal;
@@ -450,7 +450,7 @@ a h2 {
 
 .label h4 {
     font-family: canada-type-gibson, sans-serif;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 3.3vw;
     padding: 1vw 0;
     font-style: normal;
@@ -460,8 +460,8 @@ a h2 {
 
 .left,
 .right {
-    flex-basis: 20vw;
-    flex-grow: auto;
+    flex-basis: 100px;
+    flex-grow: 1;
     padding: 0 3.5vw;
 }
 
@@ -554,7 +554,7 @@ table#t01 td:nth-last-of-type(2) {
 
 h5 {
     color: #000000;
-    font-weight: 510;
+    font-weight: 600;
     font-style: normal;
     font-size: 3.2vw;
     line-height: 0.1;
