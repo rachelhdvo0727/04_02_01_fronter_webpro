@@ -190,7 +190,7 @@ header {
     position: absolute;
     /*top: 3.5vw;
     right: 15vw;*/
-    margin: 3.2vw 3vw 3.2vw 58vw;
+    margin: 3.2vw 3vw 3.2vw 80vw;
     cursor: pointer;
     padding: 1vw;
 }
@@ -270,7 +270,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 8vw;
-    margin-left: 3vw;
+    margin: 0vw 4vw 0;
 }
 
 .skema .ikon {
@@ -278,7 +278,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
-    margin-left: 1.2vw;
+    margin: 0vw 5vw 0;
 }
 
 .noti .ikon {
@@ -286,6 +286,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
+    margin: 0vw 6vw 0;
 }
 
 .techlounge {
@@ -311,6 +312,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
+    margin: 0vw 6vw 0;
 }
 
 .favoritter .ikon {
@@ -318,7 +320,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
-    margin-left: 4vw;
+    margin: 0vw 6vw 0;
 }
 
 .grupper .ikon {
@@ -326,6 +328,7 @@ a h2 {
     background-size: 100%;
     height: 8vw;
     width: 11.6vw;
+    margin: 0vw 3vw 0;
 }
 
 .chat .ikon {
@@ -333,6 +336,7 @@ a h2 {
     background-size: 100%;
     height: 8vw;
     width: 11.6vw;
+    margin: 0vw 2.5vw 0;
 }
 
 .container {
@@ -378,7 +382,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
-    margin: 5vw 5vw 0;
+    margin: 0vw 5vw 0;
 }
 
 .afleveringer .ikon {
@@ -386,7 +390,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
-    margin: 5vw 5vw 0;
+    margin: 0vw 6vw 0;
 }
 
 .eksempel .ikon {
@@ -394,7 +398,7 @@ a h2 {
     background-size: 100%;
     height: 7vw;
     width: 7vw;
-    margin: 4vw 4vw 0;
+    margin: 0vw 5vw 0;
 }
 
 
