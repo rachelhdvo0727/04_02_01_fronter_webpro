@@ -29,7 +29,7 @@
                 <div class="item"><a href="#">Aktuelt</a></div>
                 <div class="item"><a href="#">Skema</a></div>
                 <div class="item"><a href="#">Afleveringer</a></div>
-                <div class="item"><a href="#">Materialer</a></div>
+                <div class="item"><a href="skema.html#materialer">Materialer</a></div>
                 <div class="item"><a href="#">Chat</a></div>
                 <div class="item"><a href="#">Indstillinger</a></div>
                 <button type="logud"><a href="logind.html">Log ud</a></button>
@@ -37,35 +37,33 @@
 
         </nav>
     </header>
+    <!--------top_header-------->
+    <div class="label">
+        <!parent>
+            <div class="left">
+                <!child>
+                    <h1>Skema</h1>
+                    <h4>Semester: 1</h4>
+            </div>
 
+            <div class="right">
+                <!child>
+                    <h2>Tema 4</h2>
+                    <h3>Basic UX</h3>
+            </div>
+    </div>
+
+    <div class="dato">
+        <a href="#" class="previous round">&#8249;</a>
+        <div class="indhold">
+            <div class="month">Maj</div>
+            <div class="dag">Mandag</div>
+            <div class="number">20</div>
+        </div>
+        <a href="#" class="next round">&#8250;</a>
+    </div>
 
     <section id="skema">
-
-        <div class="label">
-            <!parent>
-                <div class="left">
-                    <!child>
-                        <h1>Skema</h1>
-                        <h4>Semester: 1</h4>
-                </div>
-
-                <div class="right">
-                    <!child>
-                        <h2>Tema 4</h2>
-                        <h3>Basic UX</h3>
-                </div>
-        </div>
-
-        <div class="dato">
-            <a href="#" class="previous round">&#8249;</a>
-            <div class="indhold">
-                <div class="month">Maj</div>
-                <div class="dag">Mandag</div>
-                <div class="number">20</div>
-            </div>
-            <a href="#" class="next round">&#8250;</a>
-        </div>
-
         <!-----ikonerne i tabelen------>
         <div class="ikon_link1">
             <div class="sprite1"></div>
@@ -154,6 +152,9 @@
             <div class="skema_logo"></div>
             <a href="skema.html">Skema</a>
         </div>
+    </section>
+    <section id="materialer" class="hidden">
+        <table></table>
     </section>
 </body></html>
 <script src="script.js"></script>
