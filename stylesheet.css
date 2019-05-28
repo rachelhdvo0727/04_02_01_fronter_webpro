@@ -28,12 +28,6 @@ a:link {
     text-decoration: none;
 }
 
-header {
-    background-color: #EA5045;
-    height: 13vw;
-    width: 100%;
-}
-
 /*-----------------MENU------------------*/
 #menu {
     display: flex;
@@ -172,8 +166,14 @@ nav button a:link {
     color: #FFFFFF;
 }
 
-/*-----------------FORSIDE------------------*/
-/*-----------HEADER-----------*/
+/*-----------------HEADER TIL FORSIDE, SKEMA, MATERIALER----------------*/
+
+header {
+    background-color: #EA5045;
+    height: 13vw;
+    width: 100%;
+}
+
 .kea {
     position: absolute;
     top: 3.5vw;
@@ -186,7 +186,6 @@ nav button a:link {
     position: absolute;
     top: 3.5vw;
     right: 15vw;
-
 }
 
 .kea_sprite {
@@ -203,7 +202,8 @@ nav button a:link {
     width: 4.5vw;
 }
 
-/*--------FORSIDES INDHOLD------------*/
+
+/*----------------FORSIDES INDHOLD------------------*/
 
 #forside {
     display: flex;
@@ -214,23 +214,28 @@ nav button a:link {
 #forside .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin: 2vw;
 }
 
 .col {
     background-color: #FFFFFF;
-    margin: 1.5vw;
-    padding: 5vw;
+    margin: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
 }
 
-.col a {
+a h2 {
     font-family: canada-type-gibson, sans-serif;
+    font-size: 3.5vw;
     font-weight: 500;
     font-style: normal;
     color: #F58E81;
-    /*child*/
-    flex-grow: 1;
-    flex-basis: 10vw;
+    text-align: center;
+}
+
+.col a {
+    margin: 3vw;
 }
 
 .materialer,
@@ -240,50 +245,48 @@ nav button a:link {
 .favoritter,
 .grupper,
 .chat,
-.search,
 .afleveringer,
+.search,
 .eksempel {
     /*child*/
     flex-grow: 1;
-    flex-basis: 10vw;
+    flex-basis: 100px;
     /*parent*/
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
 }
 
 .materialer .ikon {
     background-image: url(assets/Folder.svg);
     background-size: 100%;
-    height: 8vw;
+    height: 7vw;
     width: 8vw;
-    margin: 4vw;
+    margin-left: 3vw;
 }
 
 .skema .ikon {
     background-image: url(assets/Calendar.svg);
     background-size: 100%;
-    height: 8vw;
-    width: 8vw;
-    margin: 4vw;
+    height: 7vw;
+    width: 7vw;
+    margin-left: 1.2vw;
 }
 
 .noti .ikon {
     background-image: url(assets/Alert.svg);
     background-size: 100%;
-    height: 8vw;
-    width: 8vw;
-    margin: 4vw;
+    height: 7vw;
+    width: 7vw;
 }
 
 .techlounge {
     /*child*/
-    flex-grow: 2;
-    flex-basis: 40vw;
+    flex-grow: 3;
+    flex-basis: 54vw;
     /*parent*/
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -299,32 +302,30 @@ nav button a:link {
 .mail .ikon {
     background-image: url(assets/Messages.svg);
     background-size: 100%;
-    height: 8vw;
-    width: 8vw;
-    margin: 4vw;
+    height: 7vw;
+    width: 7vw;
 }
 
 .favoritter .ikon {
     background-image: url(assets/Bookmark.svg);
     background-size: 100%;
-    height: 8vw;
-    width: 8vw;
-    margin: 4vw;
+    height: 7vw;
+    width: 7vw;
+    margin-left: 4vw;
 }
 
 .grupper .ikon {
     background-image: url(assets/grupper.svg);
     background-size: 100%;
-    height: 9.4vw;
-    width: 14vw;
-    margin: 4vw;
+    height: 8vw;
+    width: 11.6vw;
 }
 
 .chat .ikon {
     background-image: url(assets/chat.svg);
     background-size: 100%;
-    height: 11.6vw;
-    width: 17vw;
+    height: 8vw;
+    width: 11.6vw;
 }
 
 .container {
@@ -338,10 +339,9 @@ nav button a:link {
 .aktuelt {
     /*child*/
     flex-grow: 2;
-    flex-basis: 20vw;
+    flex-basis: 25vw;
     /*parent*/
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -357,8 +357,8 @@ nav button a:link {
 
 .col_narrow {
     /*child*/
-    flex-grow: 1;
-    flex-basis: 10vw;
+    flex-grow: 2;
+    flex-basis: 20vw;
     /*parent*/
     display: flex;
     flex-direction: column;
@@ -369,25 +369,24 @@ nav button a:link {
 .search .ikon {
     background-image: url(assets/search.svg);
     background-size: 100%;
-    height: 10vw;
-    width: 10vw;
-    margin: 4vw;
+    height: 7vw;
+    width: 7vw;
+    margin: 5vw 5vw 0;
 }
 
 .afleveringer .ikon {
     background-image: url(assets/afleveringer.svg);
     background-size: 100%;
-    height: 10vw;
-    width: 10vw;
-    margin: 4vw;
+    height: 7vw;
+    width: 7vw;
 }
 
 .eksempel .ikon {
     background-image: url(assets/eksempel.svg);
     background-size: 100%;
-    height: 6vw;
-    width: 6vw;
-    margin: 2vw;
+    height: 7vw;
+    width: 7vw;
+
 }
 
 
@@ -576,8 +575,8 @@ p {
 }
 
 .ikon_link2 {
-    top: 62vw;
-    left: 13vw;
+    top: 63vw;
+    left: 14vw;
     position: absolute;
 }
 
@@ -591,7 +590,7 @@ p {
 
 .ikon_link3 {
     top: 86vw;
-    left: 13vw;
+    left: 14vw;
     position: absolute;
 }
 
@@ -629,7 +628,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .footer a {
@@ -662,6 +660,7 @@ p {
     flex-grow: 1;
     flex-basis: 10vw;
     padding: 3vw;
+    cursor: pointer;
 }
 
 .mat_1 {
