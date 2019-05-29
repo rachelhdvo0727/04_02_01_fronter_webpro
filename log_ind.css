@@ -67,6 +67,11 @@ input[type=password] {
     box-sizing: border-box;
 }
 
+input[type=checkbox] {
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
 input[type=text]:hover,
 input[type=password]:hover {
     box-shadow: 1vw 1vw 1vw #DEDCDB;
@@ -74,8 +79,7 @@ input[type=password]:hover {
 
 button:hover,
 .col_facebook:hover {
-    background-color: #F58E81;
-    box-shadow: 1vw 1vw 1vw #DEDCDB;
+    transform: scale(1.2);
 }
 
 .placeholder {
