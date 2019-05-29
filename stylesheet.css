@@ -1,6 +1,4 @@
 :root {
-    --screen-width: 500px;
-    --screen-height: 812px;
     --main-bg-color: #FAF7F7;
     --main-knap-color: #EA5045;
     --table-border: #E2E8ED;
@@ -11,6 +9,7 @@ html,
 body {
     background-color: var(--main-background);
     margin: 0 auto;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -28,15 +27,82 @@ a:link {
     text-decoration: none;
 }
 
-/*-----------------MENU------------------*/
+
+/*---------HEADER TIL FORSIDE, SKEMA, MATERIALER----------*/
+header {
+    background-color: #EA5045;
+    height: 13vw;
+    width: 100%;
+    top: 0;
+}
+
+.kea {
+    top: 3.5vw;
+    left: 5vw;
+    position: relative;
+    cursor: pointer;
+    /*margin: 0vw 80vw 5vw 3.5vw;*/
+}
+
+.profil {
+    position: relative;
+    /*margin: 0vw 2vw 0vw 80vw;*/
+    cursor: pointer;
+    top: -1vw;
+    left: 78vw;
+}
+
+.kea_sprite {
+    background-image: url(assets/logo_white.svg);
+    background-size: 100%;
+    height: 4.5vw;
+    width: 20vw;
+    padding: 0.2vw;
+}
+
+.profil_sprite {
+    background-image: url(assets/Profile.svg);
+    background-size: 100%;
+    height: 5vw;
+    width: 5vw;
+    padding: 0.2vw;
+}
+
+/*------HAMBURGER MENU------*/
+#menuknap {
+    display: inline-block;
+    z-index: 1;
+}
+
+.pos {
+    position: relative;
+    top: -6vw;
+    left: 88vw;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    box-sizing: border-box;
+    width: 7.5vw;
+    height: 0.8vw;
+    background-color: #F2F2F2;
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    border-radius: 0.4vw;
+}
+
 #menu {
     display: flex;
     flex-flow: wrap column;
+    justify-content: space-around;
     align-items: center;
+    /*position: absolute;*/
+    z-index: 2;
     width: 100%;
-    height: var(--screen-height);
     background-color: #3F3140;
-    z-index: 1;
+    transition: transform .3s;
+    transform-origin: top left;
 }
 
 .logo {
@@ -44,19 +110,6 @@ a:link {
     height: 6.4vw;
     width: 25.4vw;
     background-size: 100%;
-    margin-top: 15vw;
-    margin-bottom: 6vw;
-}
-
-.item {
-    text-align: center;
-    margin: 2vw;
-    padding: 1.5vw;
-}
-
-nav .hidden {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 nav a {
@@ -70,7 +123,7 @@ nav a {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     width: 100%;
 }
 
@@ -93,28 +146,6 @@ nav button a:hover {
 /* selected link */
 header nav a:active {
     color: #FFFFFF;
-}
-
-#menuknap {
-    position: absolute;
-    display: inline-block;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.pos {
-    top: 2.7vw;
-    right: 2vw;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 6.5vw;
-    height: 0.8vw;
-    background-color: #F2F2F2;
-    margin: 1vw;
-    border-radius: 0.4vw;
 }
 
 .hidden {
@@ -140,12 +171,11 @@ header nav a:active {
     transition: .20s;
 }
 
-
 /*----------LOG UD----------*/
 button {
-    height: 8vw;
-    width: var(--screen-width);
-    margin-top: 56.2vw;
+    height: 9vw;
+    width: 100%;
+    margin-top: 20vw;
     border: none;
     background-color: #F58E81;
     cursor: pointer;
@@ -165,49 +195,6 @@ nav button:visited {
 /* unvisited link */
 nav button:link {
     color: #FFFFFF;
-}
-
-/*-----------------HEADER TIL FORSIDE, SKEMA, MATERIALER----------------*/
-
-header {
-    background-color: #EA5045;
-    height: 13vw;
-    width: 100%;
-    top: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.kea {
-    position: absolute;
-    /*top: 3.5vw;
-    left: 5vw;*/
-    margin: 3.5vw 2vw;
-    cursor: pointer;
-    padding: 1vw;
-}
-
-.profil {
-    position: absolute;
-    /*top: 3.5vw;
-    right: 15vw;*/
-    margin: 3.2vw 3vw 3.2vw 80vw;
-    cursor: pointer;
-    padding: 1vw;
-}
-
-.kea_sprite {
-    background-image: url(assets/logo_white.svg);
-    background-size: 100%;
-    height: 3.7vw;
-    width: 15vw;
-}
-
-.profil_sprite {
-    background-image: url(assets/Profile.svg);
-    background-size: 100%;
-    height: 4.5vw;
-    width: 4.5vw;
 }
 
 
