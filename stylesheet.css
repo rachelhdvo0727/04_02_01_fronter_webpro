@@ -41,12 +41,10 @@ header {
     left: 5vw;
     position: relative;
     cursor: pointer;
-    /*margin: 0vw 80vw 5vw 3.5vw;*/
 }
 
 .profil {
     position: relative;
-    /*margin: 0vw 2vw 0vw 80vw;*/
     cursor: pointer;
     top: -1vw;
     left: 78vw;
@@ -55,7 +53,7 @@ header {
 .kea_sprite {
     background-image: url(assets/logo_white.svg);
     background-size: 100%;
-    height: 4.5vw;
+    height: 4.7vw;
     width: 20vw;
     padding: 0.2vw;
 }
@@ -113,7 +111,7 @@ header {
     height: 6.4vw;
     width: 25.4vw;
     background-size: 100%;
-    margin: 15vw 5vw;
+    margin: 15vw 2vw;
 }
 
 #menu a {
@@ -140,8 +138,7 @@ header nav a:visited {
 }
 
 /* mouse over link */
-#menu a:hover,
-nav button a:hover {
+#menu a:hover {
     color: var(--main-knap-color);
     transform: scale(1.5);
 }
@@ -331,7 +328,7 @@ a h2 {
 .chat .ikon {
     background-image: url(assets/chat.svg);
     background-size: 100%;
-    height: 7.8vw;
+    height: 7.9vw;
     width: 11.6vw;
     margin: 0vw 2.5vw 0;
 }
@@ -471,15 +468,20 @@ a h2 {
     padding: 1.5vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+}
+
+.indhold {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .dato a {
     color: #F58E81;
     font-family: canada-type-gibson, sans-serif;
     font-weight: 600;
-    font-size: 4.5vw;
+    font-size: 6vw;
     font-style: normal;
     text-decoration: none;
     display: inline-block;
@@ -512,7 +514,7 @@ a h2 {
 }
 
 /*-----------TABEL------------*/
-table#t01 {
+table {
     width: 100%;
     background-color: #FFFFFF;
     border-collapse: collapse;
@@ -520,10 +522,12 @@ table#t01 {
     font-style: normal;
     font-family: canada-type-gibson, sans-serif;
     border: 0.2vw solid var(--table-border);
+    overflow-x: auto;
 }
 
 th {
     font-weight: 400;
+    font-size: 3vw;
     color: #BCC5D3;
     line-height: 1.6;
     border: 0.2vw solid var(--table-border);
@@ -536,14 +540,13 @@ td {
     border: 0.2vw solid var(--table-border);
     height: 5vw;
     text-align: left;
-
 }
 
-table#t01 tr:nth-child(3n+0) {
+table tr:nth-child(3n+0) {
     background-color: var(--main-bg-color);
 }
 
-table#t01 td:nth-last-of-type(2) {
+table td:nth-last-child(2) {
     background-color: #F2F1F0;
 }
 
@@ -578,7 +581,7 @@ p {
 .sprite1 {
     background-image: url(assets/Folder.svg);
     width: 4.8vw;
-    height: 5.4vw;
+    height: 5vw;
     background-size: 100%;
     margin: 0 0 0 75vw;
 }

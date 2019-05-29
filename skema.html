@@ -11,6 +11,37 @@
 </head>
 
 <body>
+    <header>
+        <a href="forside.html">
+            <div class="kea">
+                <div class="kea_sprite"></div>
+            </div>
+        </a>
+        <div class="profil">
+            <div class="profil_sprite"></div>
+        </div>
+
+        <div id="menuknap" class="pos">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav>
+            <div id="menu" class="hidden">
+                <div class="logo">
+                </div>
+                <a href="#">Aktuelt</a>
+                <a href="skema.html">Skema</a>
+                <a href="#">Afleveringer</a>
+                <a href="materialer.html">Materialer</a>
+                <a href="#">Chat</a>
+                <a href="#">Indstillinger</a>
+                <button onclick="window.location.href = 'index.html';">Log ud</button>
+            </div>
+        </nav>
+
+    </header>
     <!---top_header-->
     <div class="label">
         <div class="left">
@@ -26,9 +57,11 @@
     <div class="dato">
         <a href="#" class="previous round">&#8249;</a>
         <div class="indhold">
+
             <div class="month">Maj</div>
             <div class="dag">Mandag</div>
             <div class="number">20</div>
+
         </div>
         <a href="#" class="next round">&#8250;</a>
     </div>
@@ -56,7 +89,7 @@
             </div>
         </a>
 
-        <table id="t01">
+        <table>
             <!--først modul-->
             <tr>
                 <th>8:30<br>9:15</th>
@@ -92,7 +125,7 @@
                 <td rowspan="2"></td>
             </tr>
             <tr>
-                <td></td>
+                <th></th>
                 <td colspan="2"></td>
             </tr>
 
@@ -110,7 +143,7 @@
                 <td colspan="2"></td>
             </tr>
             <tr>
-                <td></td>
+                <th></th>
                 <td colspan="2"></td>
             </tr>
             <!--fjerde modul-->
