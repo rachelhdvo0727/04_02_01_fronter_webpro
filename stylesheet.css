@@ -157,7 +157,7 @@ header nav a:active {
 
 /* Rotate first bar */
 .change .bar1 {
-    transform: rotate(-45deg) translate(-5px, -5px);
+    transform: rotate(-45deg) translate(-2vw, 1.5vw);
     transition: .10s;
 }
 
@@ -168,7 +168,7 @@ header nav a:active {
 
 /* Rotate last bar */
 .change .bar3 {
-    transform: rotate(45deg) translate(-55px, -50px);
+    transform: rotate(45deg) translate(-1vw, -1vw);
     transition: .10s;
 }
 
@@ -217,6 +217,10 @@ nav button:hover {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 2vw;
+    /*display: grid;
+    grid-template-columns: 125px 125px 125px;
+    grid-template-rows: 125px 125px 125px 125px 125px 125px;
+    grid-gap: 10px;*/
 }
 
 .col {
@@ -224,6 +228,9 @@ nav button:hover {
     margin: 2vw;
     padding: 2vw;
     box-sizing: border-box;
+    /*display: grid;
+    justify-items: center;
+    align-items: center;*/
 }
 
 a h2 {
@@ -291,6 +298,8 @@ a h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    grid-column: 1 / span 2;
+    */
 }
 
 .techlounge h1 {
@@ -349,6 +358,8 @@ a h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /*grid-column: 2 / span 2;
+    grid-row: 4 /span 2;*/
 }
 
 .aktuelt h1 {
@@ -572,74 +583,73 @@ p {
 }
 
 .ikon_link1 {
-    top: 56vw;
-    left: 13vw;
-    position: absolute;
-    cursor: pointer;
-}
-
-.sprite1 {
     background-image: url(assets/Folder.svg);
     width: 4.8vw;
     height: 5vw;
     background-size: 100%;
-    margin: 0 0 0 75vw;
+    /*margin: 0 0 0 75vw;*/
+}
+
+.pos1 {
+    left: 70vw;
+    position: relative;
+    top: -9vw;
 }
 
 .ikon_link2 {
-    top: 63vw;
-    left: 14vw;
-    position: absolute;
-}
-
-.sprite2 {
     background-image: url(assets/Attachment.svg);
     width: 4vw;
     height: 4vw;
     background-size: 100%;
-    margin: 0 0 0 75vw;
+    /*margin: 0 0 0 75vw;*/
+}
+
+.pos2 {
+    left: 70vw;
+    position: relative;
+    top: -6vw;
 }
 
 .ikon_link3 {
-    top: 86vw;
-    left: 14vw;
-    position: absolute;
-}
-
-.sprite3 {
     background-image: url(assets/Attachment.svg);
     width: 4vw;
     height: 4vw;
     background-size: 100%;
-    margin: 0 0 0 75vw;
+    /*margin: 0 0 0 75vw;*/
+}
+
+.pos3 {
+    left: 70vw;
+    position: relative;
+    top: -10vw;
 }
 
 .ikon_link4 {
-    top: 113vw;
-    left: 13vw;
-    position: absolute;
-}
-
-.sprite4 {
     background-image: url(assets/Folder.svg);
     width: 4.8vw;
-    height: 5.4vw;
+    height: 5vw;
     background-size: 100%;
-    margin: 0 0 0 75vw;
+    /*margin: 0 0 0 75vw;*/
+}
+
+.pos4 {
+    left: 70vw;
+    position: relative;
+    top: -9vw;
 }
 
 /*---BOTTOM---*/
 .footer {
     background-color: #3F3140;
-    position: fixed;
+    position: relative;
     box-sizing: border-box;
-    left: 0;
     bottom: 0;
     width: 100%;
     padding: 3.5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .footer a {
