@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-img,
 table {
     width: 100%;
 }
@@ -136,20 +135,18 @@ header {
 
 /*visited*/
 header nav a:visited,
-.item a:visited {
+.sectionwrapper .item a:visited {
     color: var(--main-knap-color);
 }
 
 /* mouse over link */
-#menu a:hover,
-.item a:hover {
+#menu a:hover {
     color: var(--main-knap-color);
     transform: scale(1.5);
 }
 
 /* selected link */
-header nav a:active,
-.item a:active {
+header nav a:active {
     color: #FFFFFF;
 }
 
@@ -221,6 +218,11 @@ nav button:hover {
     font-family: canada-type-gibson, sans-serif;
     font-style: normal;
     color: var(--forside-tekst-color);
+}
+
+img {
+    width: 8vw;
+    height: 8vw;
 }
 
 .item {
@@ -599,3 +601,38 @@ p {
 }
 
 /*-----------------Store skærme-----------------*/
+@media only screen and (min-width:600px) {
+
+    /*----forside----*/
+    .item {
+        font-size: 4vw;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .item-4,
+    .item-10 {
+        font-size: 7vw;
+    }
+
+    header {
+        height: 13vw;
+    }
+
+    .kea {
+        top: 3.5vw;
+        left: 6vw;
+    }
+
+    .kea_sprite {
+        height: 5vw;
+        width: 21vw;
+        padding: 0.2vw;
+    }
+
+    img {
+        width: 10vw;
+        height: 10vw;
+        margin-bottom: 2vw 0 0 0vw;
+    }
+}
