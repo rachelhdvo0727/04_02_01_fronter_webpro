@@ -2,12 +2,13 @@
     --main-bg-color: #FAF7F7;
     --main-knap-color: #EA5045;
     --table-border: #E2E8ED;
+    --forside-tekst-color: #F58E81;
     font-size: 100%;
 }
 
 html,
 body {
-    background-color: var(--main-background);
+    background-color: var(--main-bg-color);
     margin: 0 auto;
     height: 100%;
     overflow-x: hidden;
@@ -128,12 +129,14 @@ header {
 }
 
 /* unvisited link */
-#menu nav a:link {
+#menu nav a:link,
+.item a:link {
     color: #F58E81;
 }
 
 /*visited*/
-header nav a:visited {
+header nav a:visited,
+.item a:visited {
     color: var(--main-knap-color);
 }
 
@@ -144,7 +147,8 @@ header nav a:visited {
 }
 
 /* selected link */
-header nav a:active {
+header nav a:active,
+.item a:active {
     color: #FFFFFF;
 }
 
@@ -208,25 +212,37 @@ nav button:hover {
 
 .sectionwrapper {
     display: grid;
-    grid-template-columns: 125px 125px 125px;
-    grid-template-rows: 125px 125px 125px 125px 125px 125px;
-    grid-gap: 4vw;
+    margin: 4vw;
+    grid-template-columns: 28vw 28vw 28vw;
+    grid-template-rows: 28vw 28vw 28vw 28vw 28vw 28vw;
+    grid-gap: 2vw;
+    background-color: var(--main-bg-color);
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    color: var(--forside-tekst-color);
 }
 
 .item {
-    background-color: var(--main-bg-color);
+    background-color: #FFFFFF;
     display: grid;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    font-size: 3.3vw;
+    font-weight: 500;
 }
 
 .item-4 {
     grid-column: 1 / span 2;
+    font-size: 6vw;
+    font-weight: 500;
 }
 
 .item-10 {
     grid-column: 2 / span 2;
     grid-row: 4 / span 2;
+    font-size: 9vw;
+    font-weight: 600;
 }
 
 /*-----------------SKEMA------------------*/
