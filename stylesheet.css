@@ -599,12 +599,3 @@ p {
 }
 
 /*-----------------Store skærme-----------------*/
-@media only screen and (min-width:600px) {
-    header {
-        height: 10vw;
-    }
-
-
-}
-
-@media only screen and (min-width:1000px) {}
