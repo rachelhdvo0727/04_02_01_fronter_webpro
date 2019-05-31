@@ -32,13 +32,13 @@ a:link {
 /*---------HEADER TIL FORSIDE, SKEMA, MATERIALER----------*/
 header {
     background-color: #EA5045;
-    height: 10vw;
+    height: 9vw;
     width: 100%;
     top: 0;
 }
 
 .kea {
-    top: 3.5vw;
+    top: 3vw;
     left: 5vw;
     position: relative;
     cursor: pointer;
@@ -47,7 +47,7 @@ header {
 .profil {
     position: relative;
     cursor: pointer;
-    top: -1vw;
+    top: -2vw;
     left: 78vw;
 }
 
@@ -231,6 +231,7 @@ nav button:hover {
     align-items: center;
     font-size: 3.5vw;
     font-weight: 500;
+    padding: 3vw 0;
 }
 
 .item-4 {
@@ -245,7 +246,6 @@ nav button:hover {
     font-size: 9vw;
     font-weight: 600;
 }
-
 
 /*-----------------SKEMA------------------*/
 /*---TOP---*/
@@ -601,133 +601,10 @@ p {
 /*-----------------Store skærme-----------------*/
 @media only screen and (min-width:600px) {
     header {
-        height: 15vw;
+        height: 10vw;
     }
 
-    .kea_sprite {
-        height: 4.7vw;
-        width: 20vw;
-    }
 
-    .profil_sprite {
-        height: 5vw;
-        width: 5vw;
-    }
-
-    #forside .sectionwrapper {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .aktuelt h1,
-    .techlounge h1 {
-        font-size: 5vw;
-    }
-
-    .techlounge,
-    .aktuelt {
-        /*child*/
-        flex-grow: 1;
-        flex-basis: 45vw;
-    }
-
-    .materialer .ikon,
-    .skema .ikon,
-    .noti .ikon,
-    .mail .ikon,
-    .favoritter .ikon,
-    .afleveringer .ikon,
-    .search .ikon {
-        height: 5vw;
-        width: 5vw;
-        margin: 0 5vw;
-    }
-
-    .grupper .ikon {
-        height: 5vw;
-        width: 7.5vw;
-        margin: 0 25vw;
-    }
-
-    .chat .ikon {
-        height: 5.1vw;
-        width: 7.5vw;
-        margin: 0 25vw;
-    }
-
-    .col h2 {
-        font-size: 3.5vw;
-    }
-
-    .materialer,
-    .skema,
-    .noti,
-    .mail,
-    .favoritter,
-    .grupper,
-    .chat,
-    .eksempel {
-        /*child*/
-        flex-grow: 1;
-        flex-basis: 25vw;
-    }
-
-    .search,
-    .afleveringer {
-        margin-left: 0;
-        height: 25vw;
-        width: 28vw;
-        /*child*/
-        flex-grow: 1;
-        flex-basis: 100px;
-        /*parent*/
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-around;
-        align-content: center;
-    }
 }
 
-@media only screen and (min-width:1000px) {
-
-    #forside .sectionwrapper {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .col h2 {
-        font-size: 3vw;
-    }
-
-    .aktuelt h1,
-    .techlounge h1 {
-        font-size: 5vw;
-    }
-
-    .materialer .ikon,
-    .skema .ikon,
-    .noti .ikon,
-    .mail .ikon,
-    .favoritter .ikon {
-        height: 5vw;
-        width: 5vw;
-        margin: 0 10vw;
-    }
-
-    .grupper .ikon {
-        height: 5vw;
-        width: 7.5vw;
-        margin: 0 2vw;
-    }
-
-    .chat .ikon {
-        height: 5.1vw;
-        width: 7.5vw;
-        margin: 0 2vw;
-    }
-
-    .col h2 {
-        font-size: 3.5vw;
-    }
-
-}
+@media only screen and (min-width:1000px) {}
