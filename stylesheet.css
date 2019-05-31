@@ -141,7 +141,8 @@ header nav a:visited,
 }
 
 /* mouse over link */
-#menu a:hover {
+#menu a:hover,
+.item a:hover {
     color: var(--main-knap-color);
     transform: scale(1.5);
 }
@@ -215,7 +216,7 @@ nav button:hover {
     margin: 4vw;
     grid-template-columns: 28vw 28vw 28vw;
     grid-template-rows: 28vw 28vw 28vw 28vw 28vw 28vw;
-    grid-gap: 2vw;
+    grid-gap: 2.5vw;
     background-color: var(--main-bg-color);
     font-family: canada-type-gibson, sans-serif;
     font-style: normal;
@@ -225,10 +226,10 @@ nav button:hover {
 .item {
     background-color: #FFFFFF;
     display: grid;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     font-weight: 500;
 }
 
@@ -244,6 +245,7 @@ nav button:hover {
     font-size: 9vw;
     font-weight: 600;
 }
+
 
 /*-----------------SKEMA------------------*/
 /*---TOP---*/
